@@ -25,13 +25,13 @@ int main()
     printf("Please enter a negative integer\n");
     scanf("%d", &neg);
     printf("1's complement: -%d\n", ~neg); // just flipping the bits
-    printf("unsigned: %u\n", neg); // use %u to print the unsigned value
+    printf("%u\n", (unsigned int)neg); // use %u to print the unsigned value
 
 
     // Shifting right and left
     printf("\nShifting right and left:\n");
     int first, second, third;
-    printf("Please enter 3 intergers\n");
+    printf("Please enter 3 integers\n");
     scanf("%d %d %d", &first, &second, &third);
     printf("After shifting right and left: %d\n", (first >> second) << third);
     // shifting according to the instructions
@@ -40,14 +40,14 @@ int main()
     // Even - Odd
     printf("\nEven - Odd:\n");
     int num1, num2, num3;
-    printf("Please enter 3 intergers\n");
+    printf("Please enter 3 integers\n");
     scanf("%d%d%d", &num1, &num2, &num3);
     printf("0 - most of them are even, 1 - most of them are odd: %d\n", ((num1 & 1) & (num2 & 1)) | ((num1 & 1) & (num3 & 1)) | ((num2 & 1) & (num3 & 1)));
 //checking all the possibilities of odd number and if it's not so it's even
 
     // Different Bases
     printf("\nDifferent Bases:\n");
-    int oct, hex;
+    unsigned int oct, hex;
     printf("Please enter two numbers in octal and hexadecimal bases\n");
     scanf("%o%x", &oct, &hex);
     printf("LSBs: %d %d\n", oct & 1, hex & 1);
