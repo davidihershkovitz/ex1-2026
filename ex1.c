@@ -25,7 +25,7 @@ int main()
     printf("Please enter a negative integer\n");
     scanf("%d", &neg);
     printf("1's complement: -%d\n", ~neg); // just flipping the bits
-    printf("%u\n", (unsigned int)neg); // use %u to print the unsigned value
+    printf("unsigned: %u\n", (unsigned int)neg); // use %u to print the unsigned value
 
 
     // Shifting right and left
