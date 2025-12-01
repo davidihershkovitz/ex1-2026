@@ -49,7 +49,7 @@ int main()
     printf("\nDifferent Bases:\n");
     unsigned int oct, hex;
     printf("Please enter two numbers in octal and hexadecimal bases\n");
-    scanf("%o%x", &oct, &hex);
+    scanf("%o %x", &oct, &hex);
     printf("LSBs: %d %d\n", oct & 1, hex & 1);
     printf("MSBs: %d %d\n", (oct >> 31) & 1, (hex >> 31) & 1);
     /* i used the number 31 cause we work with 32 bits so in order to get to the first bit we need to
